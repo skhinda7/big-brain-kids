@@ -16,7 +16,7 @@ def incorrect(known, slip, guess):
 def action(known, taught):
     return known + ((1 - known) * taught)
 
-def checkSkill(answerList, known, taught):
+def checkSkill(answerList, known, taught, slip, guess):
     print("Initial Known", known)
     for i in range(len(answerList)):
         if(answerList[i] == 0): # Correct Answer
@@ -25,9 +25,9 @@ def checkSkill(answerList, known, taught):
             known = action(incorrect(known, slip, guess), taught)
     return known
     
-testList = [1, 0, 0, 0, 0, 0, 1, 1, 1] # Test Array of Correct/Incorrect Answers
-overall_proficency = checkSkill(testList, known, taught)
-print('Skill Proficency: ', overall_proficency)
+# testList = [1, 0, 0, 0, 0, 0, 1, 1, 1] # Test Array of Correct/Incorrect Answers
+# overall_proficency = checkSkill(testList, known, taught)
+# print('Skill Proficency: ', overall_proficency)
 
-if(overall_proficency >= 0.95):
-    print("Skill has been mastered: ", overall_proficency)
+# if(overall_proficency >= 0.95):
+  #  print("Skill has been mastered: ", overall_proficency)
