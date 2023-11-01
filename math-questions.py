@@ -15,7 +15,7 @@ for question in range(5):
     answers.insert(question, 1)
 
 def newStudent(answers):
-  return checkSkill(answers, 0, 0.1)
+  return checkSkill(answers, 0.4, 0.1, 0.3, 0.2)
 
 print(answers)
 
