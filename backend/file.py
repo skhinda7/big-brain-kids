@@ -1,40 +1,42 @@
 import csv
 import json
 
-def saveUsers(data, id):
+userDB = 'backend/users.csv'
+scoresDB = 'backend/scores.json'
+
+
+def saveUser(data, id):
     data.append(id)
-    file_path = 'users.csv'
-    with open(file_path, 'a', newline='') as csv_file:
+    with open(userDB, 'a', newline='') as csv_file:
         csv_writer = csv.writer(csv_file)
-        csv_writer.writerow(data) # Data should be like this: ['First Name', 'Last Name', 'ID']
+        csv_writer.writerow(data) # Data should be like this: ['First Name', 'Last Name', 'Email', 'Password', 'ID']
 
-    print(f"Data saved to {file_path}")
+    print(f"Data saved to {userDB}")
 
-def getUser(id):
-    found_row = None
-    with open('users.csv', newline='') as csv_file:
+def checkUser(email, password):
+    emailFound = passwordFound = False
+    with open(userDB, 'r', newline='') as csv_file:
         csv_reader = csv.DictReader(csv_file)
         for row in csv_reader:
-            if row['ID'] == str(id):
-                found_row = row
-                break  # Stop searching after the target ID is found
-
-    if found_row:
-        return found_row
-    else:
-        return 'Not found'
+            if row['Email'] == str(email):
+                emailFound = True  
+            if row['Password'] == str(password):
+                passwordFound = True
+            if emailFound and passwordFound == True:
+                return True
+    return False
     
 def getScore(id):
-    with open('scores.json', 'r') as file:
+    with open(scoresDB, 'r') as file:
         data = json.load(file)
 
     for entry in data['data']:
         if entry['id'] == id:
             return entry['scores']
-    return None 
+    return 'Null' 
 
 def appendScore(id, operation, score):
-    with open('scores.json', 'r') as file:
+    with open(scoresDB, 'r') as file:
         data = json.load(file)
 
     for entry in data['data']:
