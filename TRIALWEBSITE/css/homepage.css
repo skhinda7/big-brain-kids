@@ -1,0 +1,927 @@
+.homepage-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .homepage-home-page1 {
+    width: 100;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 29;
+    flex-direction: column;
+  }
+  .homepage-frame18 {
+    width: 100%;
+    height: 491px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-self: stretch;
+    align-items: flex-start;
+    background-color: var(--dl-color-primaty-greylight);
+  }
+  .homepage-frame8 {
+    gap: 58.60853576660156px;
+    top: 64.46945190429688px;
+    left: 277.38275146484375px;
+    width: 484px;
+    height: 360.7680969238281px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .homepage-frame5 {
+    gap: 24.616891860961914px;
+    display: flex;
+    align-self: stretch;
+    flex-shrink: 0;
+    border-radius: 38.116477966308594px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .homepage-group4 {
+    width: 0px;
+    height: 0px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .homepage-frame4 {
+    gap: 31.763731002807617px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .homepage-frame41 {
+    gap: 15.628942489624023px;
+    display: flex;
+    align-self: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .homepage-text {
+    color: var(--dl-color-primaty-cyandark);
+    height: auto;
+    font-size: 10.419295310974121px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame51 {
+    gap: 19.536178588867188px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .homepage-text02 {
+    color: var(--dl-color-primaty-black);
+    width: 346px;
+    height: auto;
+    font-size: 36.467533111572266px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Dela Gothic One;
+    font-weight: 400;
+    line-height: 120.00000476837158%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text04 {
+    color: var(--dl-color-primaty-greydark);
+    width: 258px;
+    height: auto;
+    font-size: 11.7217px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: "Montserrat";
+    font-weight: 600;
+    line-height: 140%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame42 {
+    gap: 20.838590621948242px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .homepage-frame7 {
+    gap: 19.536178588867188px;
+    display: flex;
+    align-items: center;
+  }
+  .homepage-navlink {
+    display: contents;
+  }
+  .homepage-frame2 {
+    gap: 12.372913360595703px;
+    display: flex;
+    padding: 9.116883277893066px 14.326531410217285px;
+    align-items: center;
+    border-radius: 65.12059783935547px;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--dl-color-primaty-cyanlight);
+  }
+  .homepage-text05 {
+    color: rgba(43, 120, 139, 1);
+    height: auto;
+    font-size: 10.419295310974121px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame81 {
+    gap: 31.763731002807617px;
+    display: flex;
+    align-items: center;
+  }
+  .homepage-frame3 {
+    gap: 1.953617811203003px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .homepage-frame31 {
+    gap: 6.512059688568115px;
+    display: flex;
+    align-items: center;
+  }
+  .homepage-frame35271 {
+    width: 16px;
+    height: 20px;
+  }
+  .homepage-text07 {
+    color: rgba(43, 120, 139, 1);
+    height: auto;
+    font-size: 26.04823875427246px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Dela Gothic One;
+    font-weight: 400;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text09 {
+    color: rgba(88, 88, 88, 1);
+    height: auto;
+    font-size: 10.419295310974121px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 139.9999976158142%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-vector1 {
+    width: 0px;
+    height: 32px;
+  }
+  .homepage-frame32 {
+    gap: 1.953617811203003px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .homepage-frame82 {
+    gap: 6.512059688568115px;
+    display: flex;
+    align-items: center;
+  }
+  .homepage-frame352711 {
+    width: 16px;
+    height: 20px;
+  }
+  .homepage-text11 {
+    color: rgba(43, 120, 139, 1);
+    height: auto;
+    font-size: 26.04823875427246px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Dela Gothic One;
+    font-weight: 400;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text13 {
+    color: rgba(88, 88, 88, 1);
+    height: auto;
+    font-size: 10.419295310974121px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 139.9999976158142%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame24 {
+    top: 95.07612609863281px;
+    left: 553.4940795898438px;
+    width: 326px;
+    height: 303.46197509765625px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .homepage-blur2 {
+    top: 119px;
+    left: 94px;
+    width: 93px;
+    height: 111px;
+    position: absolute;
+  }
+  .homepage-boy1 {
+    top: 1px;
+    right: -189px;
+    width: 396px;
+    height: 330px;
+    position: absolute;
+  }
+  .homepage-tree1 {
+    top: 16px;
+    right: -345px;
+    width: 326px;
+    height: 347px;
+    position: absolute;
+  }
+  .homepage-group24 {
+    width: 1250.3154296875px;
+    height: 61.86456298828125px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .homepage-frame35276 {
+    left: 33px;
+    bottom: -1px;
+    display: flex;
+    padding: 15.628942489624023px 240.94619750976562px;
+    position: absolute;
+    align-self: stretch;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--dl-color-primaty-greylight);
+  }
+  .homepage-text18 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 13.584758758544922px;
+    align-self: center;
+    font-style: Regular;
+    text-align: left;
+    font-family: Dela Gothic One;
+    font-weight: 400;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame9 {
+    gap: 19.536178588867188px;
+    height: 30.606679916381836px;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .homepage-vector11 {
+    width: 0px;
+    height: 11px;
+  }
+  .homepage-text20 {
+    color: var(--dl-color-primaty-black);
+    height: auto;
+    font-size: 10.419295310974121px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 139.9999976158142%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text22 {
+    color: var(--dl-color-primaty-greydark);
+    height: auto;
+    font-size: 10.419295310974121px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 139.9999976158142%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text24 {
+    color: var(--dl-color-primaty-greydark);
+    height: auto;
+    font-size: 10.4193px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: "Montserrat";
+    font-weight: 600;
+    line-height: 140%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text25 {
+    color: var(--dl-color-primaty-greydark);
+    height: auto;
+    font-size: 10.4193px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: "Montserrat";
+    font-weight: 600;
+    line-height: 140%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame33 {
+    display: flex;
+    align-items: center;
+  }
+  .homepage-text26 {
+    color: var(--dl-color-primaty-greydark);
+    height: auto;
+    font-size: 10.419295310974121px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 139.9999976158142%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame71 {
+    gap: 19.536178588867188px;
+    top: 17px;
+    left: 1008px;
+    width: 59px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .homepage-navlink1 {
+    display: contents;
+  }
+  .homepage-frame21 {
+    gap: 12.372913360595703px;
+    width: 75.65306091308594px;
+    display: flex;
+    padding: 9.116883277893066px 14.326531410217285px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 65.12059783935547px;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--dl-color-primaty-cyanlight);
+  }
+  .homepage-text27 {
+    color: rgba(43, 120, 139, 1);
+    height: auto;
+    font-size: 10.419295310974121px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame22 {
+    gap: 12.372913360595703px;
+    display: flex;
+    padding: 9.116883277893066px 14.326531410217285px;
+    align-items: center;
+    border-radius: 65.12059783935547px;
+    justify-content: center;
+    background-color: var(--dl-color-primaty-cyanlight);
+  }
+  .homepage-text29 {
+    color: rgba(20, 101, 120, 1);
+    height: auto;
+    font-size: 10.419295310974121px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame35272 {
+    gap: 19.536178588867188px;
+    top: 17px;
+    left: 1093px;
+    width: 72px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .homepage-frame19 {
+    width: 1250.3154296875px;
+    height: 390.72357177734375px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-self: stretch;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .homepage-frame52 {
+    gap: 19.536178588867188px;
+    top: 80.7496566772461px;
+    left: 625.126708984375px;
+    width: 251px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .homepage-text31 {
+    color: var(--dl-color-primaty-black);
+    width: 309px;
+    height: auto;
+    font-size: 31.257884979248047px;
+    font-style: Regular;
+    text-align: left;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Gothic One;
+    font-weight: 400;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text33 {
+    color: var(--dl-color-primaty-greydark);
+    width: 258px;
+    height: auto;
+    font-size: 11.721707344055176px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 139.9999976158142%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-group12 {
+    width: 211px;
+    height: 94.7504653930664px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .homepage-group11 {
+    top: 0.32573431730270386px;
+    left: 0.000019023944332730025px;
+    width: 85.30797576904297px;
+    height: 94.42485809326172px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .homepage-frame34 {
+    gap: 12.372913360595703px;
+    top: 21.48984718322754px;
+    left: 1.2714287042617798px;
+    width: 84.00556945800781px;
+    height: 72.93506622314453px;
+    display: flex;
+    padding: 9.116883277893066px 14.326531410217285px;
+    position: absolute;
+    align-items: flex-end;
+    flex-shrink: 0;
+    border-radius: 9.116883277893066px;
+    justify-content: center;
+    background-color: var(--dl-color-primaty-pinklight);
+  }
+  .homepage-text35 {
+    color: var(--dl-color-primaty-pinkdark);
+    height: auto;
+    font-size: 10.419295310974121px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-shoes1 {
+    top: 0px;
+    left: 0px;
+    width: 85px;
+    height: 69px;
+    position: absolute;
+  }
+  .homepage-group10 {
+    top: 0.00013135580229572952px;
+    left: 99.01432037353516px;
+    width: 112.0074234008789px;
+    height: 94.42485809326172px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .homepage-frame6 {
+    gap: 12.372913360595703px;
+    top: 21.489927291870117px;
+    left: 0.00004144502236158587px;
+    width: 112.0074234008789px;
+    height: 72.93506622314453px;
+    display: flex;
+    padding: 9.116883277893066px 14.326531410217285px;
+    position: absolute;
+    align-items: flex-end;
+    flex-shrink: 0;
+    border-radius: 9.116883277893066px;
+    justify-content: center;
+    background-color: var(--dl-color-primaty-cyanlight);
+  }
+  .homepage-text37 {
+    color: var(--dl-color-primaty-cyandark);
+    width: 79px;
+    height: auto;
+    font-size: 10.419295310974121px;
+    font-style: Bold;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-group9 {
+    top: 0.00013135580229572952px;
+    left: 26.699485778808594px;
+    width: 59.25973892211914px;
+    height: 69.02783203125px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .homepage-image11 {
+    top: 0px;
+    left: 0px;
+    width: 59px;
+    height: 69px;
+    position: absolute;
+  }
+  .homepage-girl1 {
+    top: 50.14297866821289px;
+    left: 268.9170837402344px;
+    width: 378px;
+    height: 290px;
+    position: absolute;
+  }
+  .homepage-frame20 {
+    width: 100%;
+    height: 339px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-self: stretch;
+    align-items: flex-start;
+    background-color: var(--dl-color-primaty-greylight);
+  }
+  .homepage-girl2 {
+    top: 16.94889259338379px;
+    left: 631.6697998046875px;
+    width: 378px;
+    height: 309px;
+    position: absolute;
+  }
+  .homepage-frame83 {
+    gap: 22.141002655029297px;
+    top: 88.57295989990234px;
+    left: 306.06683349609375px;
+    width: 309px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .homepage-frame53 {
+    gap: 19.536178588867188px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .homepage-text39 {
+    color: var(--dl-color-primaty-black);
+    width: 309px;
+    height: auto;
+    font-size: 31.257884979248047px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Dela Gothic One;
+    font-weight: 400;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text41 {
+    color: var(--dl-color-primaty-greydark);
+    width: 258px;
+    height: auto;
+    font-size: 11.721707344055176px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 139.9999976158142%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame61 {
+    gap: 8.0573148727417px;
+    display: flex;
+    padding: 5.936968803405762px 9.329522132873535px;
+    align-items: center;
+    border-radius: 42.40692138671875px;
+    justify-content: center;
+    background-color: var(--dl-color-primaty-cyanlight);
+  }
+  .homepage-text43 {
+    color: rgba(43, 120, 139, 1);
+    height: auto;
+    font-size: 6.785107135772705px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame21 {
+    width: 1250.3154296875px;
+    height: 390.72357177734375px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-self: stretch;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .homepage-boygril1 {
+    top: 62.107486724853516px;
+    left: 240.94622802734375px;
+    width: 443px;
+    height: 267px;
+    position: absolute;
+  }
+  .homepage-frame84 {
+    gap: 22.141002655029297px;
+    top: 97.02967834472656px;
+    left: 696.7904052734375px;
+    width: 309px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .homepage-frame54 {
+    gap: 19.536178588867188px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .homepage-text45 {
+    color: var(--dl-color-primaty-black);
+    width: 309px;
+    height: auto;
+    font-size: 31.257884979248047px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Dela Gothic One;
+    font-weight: 400;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text47 {
+    color: var(--dl-color-primaty-greydark);
+    width: 258px;
+    height: auto;
+    font-size: 11.721707344055176px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 139.9999976158142%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame62 {
+    gap: 8.0573148727417px;
+    display: flex;
+    padding: 5.936968803405762px 9.329522132873535px;
+    align-items: center;
+    border-radius: 42.40692138671875px;
+    justify-content: center;
+    background-color: var(--dl-color-primaty-cyanlight);
+  }
+  .homepage-text49 {
+    color: var(--dl-color-primaty-cyandark);
+    height: auto;
+    font-size: 10.419295310974121px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 700;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame22 {
+    gap: 6.512059688568115px;
+    display: flex;
+    padding: 26.04823875427246px 240.94619750976562px;
+    align-self: stretch;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: var(--dl-color-primaty-greylight);
+  }
+  .homepage-frame14 {
+    gap: 13.02411937713623px;
+    height: 34px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .homepage-frame141 {
+    gap: 6.512059688568115px;
+    display: flex;
+    align-self: stretch;
+    align-items: flex-start;
+    flex-shrink: 0;
+    justify-content: space-between;
+  }
+  .homepage-frame142 {
+    gap: 19.536178588867188px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .homepage-text51 {
+    color: var(--dl-color-primaty-greydark);
+    height: auto;
+    font-size: 9.116883277893066px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text53 {
+    color: var(--dl-color-primaty-greydark);
+    height: auto;
+    font-size: 9.116883277893066px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text55 {
+    color: var(--dl-color-primaty-greydark);
+    height: auto;
+    font-size: 9.116883277893066px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text57 {
+    color: var(--dl-color-primaty-greydark);
+    height: auto;
+    font-size: 9.11688px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: "Montserrat";
+    font-weight: 600;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-frame15 {
+    gap: 19.536178588867188px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .homepage-text58 {
+    color: var(--dl-color-primaty-greydark);
+    height: auto;
+    font-size: 9.116883277893066px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text60 {
+    color: var(--dl-color-primaty-greydark);
+    height: auto;
+    font-size: 9.116883277893066px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-text62 {
+    color: var(--dl-color-primaty-greydark);
+    height: auto;
+    font-size: 9.116883277893066px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .homepage-vector12 {
+    width: 0px;
+    height: 768px;
+    align-self: stretch;
+  }
+  .homepage-frame13 {
+    gap: 6.512059688568115px;
+    width: 768.4230346679688px;
+    height: 16.931354522705078px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+  }
+  .homepage-frame63 {
+    gap: 19.536178588867188px;
+    display: flex;
+    align-items: center;
+  }
+  .homepage-frame30 {
+    width: 20px;
+    height: 16px;
+  }
+  .homepage-frame33 {
+    width: 20px;
+    height: 16px;
+  }
+  .homepage-frame31 {
+    width: 20px;
+    height: 16px;
+  }
+  .homepage-text64 {
+    color: var(--dl-color-primaty-greydark);
+    height: auto;
+    font-size: 7.814471244812012px;
+    font-style: SemiBold;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 600;
+    line-height: 100%;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  
