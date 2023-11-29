@@ -1,0 +1,96 @@
+<head>
+  <link href="/frontend/TRIALWEBSITE/css/login-page.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="login-page-container">
+    <div class="login-page-login-page">
+      <div class="login-page-group25">
+        <div class="login-page-frame35276">
+          <div class="login-page-frame9">
+            <span class="login-page-text"><span>Big Brain Kids</span></span>
+            <img src="/frontend/TRIALWEBSITE/images/vector1i2226-tujo.svg" alt="Vector1I2226"
+              class="login-page-vector1" />
+            <a href="/frontend/TRIALWEBSITE/html/homepage.html" class="login-page-text02">Home</a>
+            <a href="/frontend/TRIALWEBSITE/html/howitworks.html" class="login-page-text04">How it works</a>
+            <a href="/frontend/TRIALWEBSITE/html/statistics.html" class="login-page-text06">Statistics</a>
+            <a href="/frontend/TRIALWEBSITE/html/who-we-are.html" class="login-page-text08">Who We Are</a>
+
+            <div class="login-page-frame3">
+              <span class="login-page-text08 TextBody2"></span>
+            </div>
+          </div>
+        </div>
+        <div class="login-page-frame7">
+          <div class="login-page-frame2">
+            <a href="/frontend/TRIALWEBSITE/html/NewLogin.html" class="login-page-text11"><span>Login</a></span>
+          </div>
+          <div class="login-page-frame21">
+            <a href="/frontend/TRIALWEBSITE/html/registration.html" class="login-page-text13">Register</a>
+          </div>
+        </div>
+        <div class="login-page-frame35272"></div>
+      </div>
+      <div class="login-page-frame35">
+        <div class="login-page-frame36">
+          <img src="/frontend/TRIALWEBSITE/images/image12226-wp2a.png" alt="image12226" class="login-page-image1" />
+          <div class="login-page-image31">
+            <span class="login-page-text15 HeadingsHeading2">
+              <span>Login</span>
+              <p>Welcome Back!</p>
+              <div class="login-page-formcontainer" class="login-form" id="loginForm">
+                <form>
+                  <label for="email">Email:</label>
+                  <p><input type="email" id="email" required placeholder="Type your email address here"></p>
+                  <p><label for="password">Password:</label></p>
+                  <input type="password" id="password" required placeholder="Type your password here">
+
+                  <p><button type="submit">Login</button></p>
+                </form>
+              </div>
+            </span>
+          </div>
+          <div class="login-page-frame361">
+            <div class="login-page-frame14">
+              <div class="login-page-frame141">
+                <div class="login-page-frame142">
+                  <a href="/frontend/TRIALWEBSITE/html/homepage.html" class="login-page-text25">Home</a>
+                  <a href="/frontend/TRIALWEBSITE/html/statistics.html" class="login-page-text29">Statistics</a>
+                  <a href="/frontend/TRIALWEBSITE/html/NewLogin.html" class="login-page-text31">Login</a>
+                  <a href="/frontend/TRIALWEBSITE/html/registration.html" class="login-page-text33">Register</a>
+                </div>
+                <div class="login-page-frame153">
+                  <a href="/frontend/TRIALWEBSITE/html/homepage.html" class="login-page-text35">BigBrainKids</a>
+                  <a href="/frontend/TRIALWEBSITE/html/howitworks.html" class="login-page-text37">Support</a>
+                  <a href="/frontend/TRIALWEBSITE/html/howitworks.html" class="login-page-text39">FAQs</a>
+                </div>
+              </div>
+              <div class="login-page-frame13">
+                <div class="login-page-frame6">
+                </div>
+                <span class="login-page-text41">
+                  <span class="login-page-text42">©2023 SE 300. Final Project</span>
+                  <span class="login-page-text43">Embry-Riddle Aeronautical University.</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/frontend/TRIALWEBSITE/js/backend.js"></script>
+  <script>
+    const loginForm = document.getElementById('loginForm');
+    const loginButton = document.getElementById('loginButton');
+
+      loginForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        checkLogin(email, password);
+      });
+  </script>
+</body>
