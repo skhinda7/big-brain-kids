@@ -1,17 +1,19 @@
-from flask import Flask, request
+from flask import Flask, request, jsonify
+from flask_cors import CORS
 import file
 import uuid
 from bkt import checkSkill
 import content
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/create-user', methods=['PUT'])
 def create_user():
     id = uuid.uuid4()
     data = request.get_json()
     file.saveUser(list(data.values()), id)
-    return str(id), 200
+    return jsonify({'id': str(file.saveUser(list(data.values()), id))})
 
 @app.route('/check-login', methods=['POST'])
 def check_login():
@@ -20,7 +22,7 @@ def check_login():
     password = data['password']
     print(file.checkUser(email, password))
     
-    return 'True' if file.checkUser(email, password) else 'False'
+    return jsonify({'authenticated': file.checkUser(email, password)})
 
 @app.route('/get-scores', methods=['GET'])
 def get_scores():
