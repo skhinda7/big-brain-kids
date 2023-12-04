@@ -40,3 +40,4 @@ def getDynamicQuestion(operation, known):
     c = int(a / b)
     sign = '&divide;'  
   return (f'{str(a)} {str(sign)} {str(b)}', f'{str(int(c))}')
+

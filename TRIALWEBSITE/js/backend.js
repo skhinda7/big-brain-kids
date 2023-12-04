@@ -175,8 +175,23 @@ function processScore(operation, answer) {
     } else {
         displayBanner('noAnswerBanner');
     }
+
+    checkMastery(operation);
 }
 
+function checkMastery(operation) {
+    getScore()
+        .then(res => {
+            if (res[operation] >= 0.98) {
+                displayCompletionMessage();
+            }
+        })
+}
+function displayCompletionMessage() {
+    // Show a completion message or banner indicating proficiency reached
+    alert('Congratulations! You have reached the proficiency level. You will now be redirected to the learning hub.');
+    window.location.replace('http://127.0.0.1:5500/TRIALWEBSITE/html/learning.html');
+}
 function displayBanner(bannerId) {
     const banners = document.querySelectorAll('.banner');
     banners.forEach(banner => {
@@ -186,3 +201,4 @@ function displayBanner(bannerId) {
     const bannerToShow = document.getElementById(bannerId);
     bannerToShow.classList.remove('hidden');
 }
+
