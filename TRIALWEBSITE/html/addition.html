@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <script src="/TRIALWEBSITE/js/backend.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+                checkSession()
+                    .then(res => {
+                        console.log(res)
+                        if (res.authenticated) {
+                            console.log('LOGGED IN');
+                        } else {
+                            window.location.replace('http://127.0.0.1:5500/TRIALWEBSITE/html/homepage.html');
+                            console.log('NOT LOGGED IN');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error during session check:', error);
+                    });
+            });
+        try {
+            let answer;
+            async function pushQuestion() {
+                try {
+                    let question = await getQuestion('addition', 0);
+                    let equation = question.equation;
+                    answer = question.answer;
+
+                    document.getElementById('question-text').innerHTML = equation;
+                    const answerBtn = document.getElementById('answer-btn');
+
+                    answerBtn.addEventListener('click', () => {
+                        processScore('addition', answer);
+                    })
+
+                } catch (error) {
+                    console.error('Error fetching question:', error);
+                    return null;
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                pushQuestion();
+            })
+        } catch (e) {
+            console.log(e)
+        }
+    </script>
+    <div>
+        <link href="/TRIALWEBSITE/css/learning.css" rel="stylesheet">
+        <div class="login-page-container">
+            <div class="login-page-login-page">
+                <div class="login-page-group25">
+                    <div class="login-page-frame35276">
+                        <div class="login-page-frame9">
+                            <span class="login-page-text"><span>Big Brain Kids</span></span>
+                            <img src="/TRIALWEBSITE/images/vector1i2226-tujo.svg" alt="Vector1I2226"
+                                class="login-page-vector1">
+                            <a href="homepage.html" class="login-page-text02">Home</a>
+                            <a href="howitworks.html" class="login-page-text04">How it works</a>
+                            <a href="statistics.html" class="login-page-text06">Statistics</a>
+                            <a href="who-we-are.html" class="login-page-text08">Who We Are</a>
+
+                            <div class="login-page-frame3">
+                                <span class="login-page-text08 TextBody2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="learning-container">
+                        <div class="learning-frame35">
+                            <div class="learning-frame36">
+                                <div class="learning-frame16">
+                                    <img src="/TRIALWEBSITE/images/image12226-wp2a.png" alt="image331795"
+                                        class="learning-image33">
+                                    <div class="learning-frame17">
+                                        <div class="learning-frame18">
+                                            <span class="learning-text HeadingsHeading3">
+                                                <span>Addition Learning page</span>
+                                            </span>
+                                            <span class="learning-text02 TextBody2">
+                                                <span>Answer all the questions to the best of your abilities</span>
+                                                <span>Good Luck!</span>
+                                            </span>
+                                        </div>
+                                        <div id="correctBanner" class="banner hidden correct">
+                                            <p>Correct Answer!</p>
+                                        </div>
+                                        <div id="wrongBanner" class="banner hidden wrong">
+                                            <p>Incorrect Answer!</p>
+                                        </div>
+                                        <div id="noAnswerBanner" class="banner hidden no-answer">
+                                            <p>No answer was provided.</p>
+                                        </div>
+                                        <div id="question-container">
+                                            <div id="question-text"></div>
+                                            <div id="explanation"></div>
+                                            <form id="answer-form">
+                                                <input type="text" id="user-answer" placeholder="Enter your answer">
+                                                <button type="button" id="answer-btn">Submit Answer</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

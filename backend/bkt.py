@@ -1,7 +1,6 @@
-known = 0.4
-taught = 0.1
-slip = 0.3
-guess = 0.2
+taught = 0.005
+slip = 0.005
+guess = 0.005
 
 def correct(known, slip, guess):
     num = (known * (1 - slip))

@@ -9,8 +9,7 @@
         <div class="login-page-frame35276">
           <div class="login-page-frame9">
             <span class="login-page-text"><span>Big Brain Kids</span></span>
-            <img src="/TRIALWEBSITE/images/vector1i2226-tujo.svg" alt="Vector1I2226"
-              class="login-page-vector1" />
+            <img src="/TRIALWEBSITE/images/vector1i2226-tujo.svg" alt="Vector1I2226" class="login-page-vector1" />
             <a href="/TRIALWEBSITE/html/homepage.html" class="login-page-text02">Home</a>
             <a href="/TRIALWEBSITE/html/howitworks.html" class="login-page-text04">How it works</a>
             <a href="/TRIALWEBSITE/html/statistics.html" class="login-page-text06">Statistics</a>
@@ -84,13 +83,27 @@
     const loginForm = document.getElementById('loginForm');
     const loginButton = document.getElementById('loginButton');
 
-      loginForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-        
-        const email = document.getElementById('email').value;
-        const password = document.getElementById('password').value;
+    loginForm.addEventListener('submit', function (event) {
+      event.preventDefault();
 
-        checkLogin(email, password);
-      });
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      checkLogin(email, password);
+    });
+
+    document.addEventListener('DOMContentLoaded', (event) => {
+      checkSession()
+        .then(res => {
+          console.log(res)
+          if (res.authenticated) {
+            window.location.replace('http://127.0.0.1:5500/TRIALWEBSITE/html/learning.html');
+            console.log('LOGGED IN');
+          }
+        })
+        .catch(error => {
+          console.error('Error during session check:', error);
+        });
+    });
   </script>
 </body>
