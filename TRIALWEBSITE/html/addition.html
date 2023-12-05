@@ -7,20 +7,20 @@
     <script src="/TRIALWEBSITE/js/backend.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
-                checkSession()
-                    .then(res => {
-                        console.log(res)
-                        if (res.authenticated) {
-                            console.log('LOGGED IN');
-                        } else {
-                            window.location.replace('http://127.0.0.1:5500/TRIALWEBSITE/html/homepage.html');
-                            console.log('NOT LOGGED IN');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error during session check:', error);
-                    });
-            });
+            checkSession()
+                .then(res => {
+                    console.log(res)
+                    if (res.authenticated) {
+                        console.log('LOGGED IN');
+                    } else {
+                        window.location.replace('http://127.0.0.1:5500/TRIALWEBSITE/html/homepage.html');
+                        console.log('NOT LOGGED IN');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error during session check:', error);
+                });
+        });
         try {
             let answer;
             async function pushQuestion() {
@@ -69,6 +69,13 @@
                             </div>
                         </div>
                     </div>
+                    <div class="login-page-frame7">
+                        <div class="login-page-frame2">
+                            <a href="/TRIALWEBSITE/html/learning.html" class="login-page-text11">Return to Hub</a>
+                            <a href="/TRIALWEBSITE/html/homepage.html" class="login-page-text11"
+                                onclick="logOut()"><span>Log Out</a></span>
+                        </div>
+                    </div>
                     <div class="learning-container">
                         <div class="learning-frame35">
                             <div class="learning-frame36">
@@ -78,11 +85,14 @@
                                     <div class="learning-frame17">
                                         <div class="learning-frame18">
                                             <span class="learning-text HeadingsHeading3">
-                                                <span>Addition Learning page</span>
+                                                <span>
+                                                    <h1>Learn Addition</h1>
+                                                </span>
                                             </span>
                                             <span class="learning-text02 TextBody2">
-                                                <span>Answer all the questions to the best of your abilities</span>
-                                                <span>Good Luck!</span>
+                                                <span>
+                                                    <h4>Answer each question in the text box below.</h4>
+                                                </span>
                                             </span>
                                         </div>
                                         <div id="correctBanner" class="banner hidden correct">
@@ -98,7 +108,7 @@
                                             <div id="question-text"></div>
                                             <div id="explanation"></div>
                                             <form id="answer-form">
-                                                <input type="text" id="user-answer" placeholder="Enter your answer">
+                                                <input id="user-answer" type="number" placeholder="Enter your answer">
                                                 <button type="button" id="answer-btn">Submit Answer</button>
                                             </form>
                                         </div>

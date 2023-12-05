@@ -33,8 +33,13 @@ def getDynamicQuestion(operation, known):
     c = a * b
     sign = 'x'  
   elif(operation == 'division'):
-    numOne = random.randint(1, int(known * 20))
-    numTwo = random.randint(1, int(known * 20))
+    if(known <= 0.1):
+      upperBound = 2
+    else:
+      upperBound = int(known * 25)
+      
+    numOne = random.randint(1, upperBound)
+    numTwo = random.randint(1, upperBound)
     a = numOne * numTwo
     b = random.choice([numOne, numTwo])
     c = int(a / b)

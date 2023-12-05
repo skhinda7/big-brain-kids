@@ -24,6 +24,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="login-page-frame7">
+                        <div class="login-page-frame2">
+                            <a href="/TRIALWEBSITE/html/homepage.html" class="login-page-text11"
+                                onclick="logOut()"><span>Log Out</a></span>
+                        </div>
+                    </div>
                     <div class="learning-container">
                         <div class="learning-frame35">
                             <div class="learning-frame36">
@@ -33,10 +39,9 @@
                                     <div class="learning-frame17">
                                         <div class="learning-frame18">
                                             <span class="learning-text HeadingsHeading3">
-                                                <span>Results</span>
-                                            </span>
-                                            <span class="learning-text02 TextBody2">
-                                                <span>Thank you for taking the evaluation test</span>
+                                                <div id="title">
+                                                    <h1>Your Current Progress</h1>
+                                                </div>
                                             </span>
                                         </div>
                                         <div class="learning-frame181">
@@ -100,24 +105,27 @@
                                     </div>
                                 </div>
                                 <div class="learning-frame35283">
-                                    <div class="learning-frame35284">
-                                        <div class="learning-frame4">
-                                            <a href="subtraction.html" class="learning-text20">Learn -</a>
+                                    <div class="learn-button-container">
+                                        <div class="learning-frame35284">
+                                            <button class="learn-btn">Learn</button>
                                         </div>
                                     </div>
-                                    <div class="learning-frame41">
-                                        <a href="addition.html" class="learning-text20">Learn +</a>
-                                    </div>
-                                    <div class="learning-frame35286"></div>
-                                    <div class="learning-frame42">
-                                        <a href="multiplication.html" class="learning-text20">Learn x</a>
 
-                                    </div>
-                                    <div class="learning-frame35287">
-                                        <div class="learning-frame43">
-                                            <a href="division.html" class="learning-text20">Learn /</a>
+                                </div>
 
+                                <!-- Popup for operation selection -->
+                                <div class="popup" id="operationPopup">
+                                    <div class="popup-content">
+                                        <h2>Select an Operation to Learn</h2>
+                                        <div class="operations">
+                                            <button class="operation-btn" data-operation="addition">Addition</button>
+                                            <button class="operation-btn"
+                                                data-operation="subtraction">Subtraction</button>
+                                            <button class="operation-btn"
+                                                data-operation="multiplication">Multiplication</button>
+                                            <button class="operation-btn" data-operation="division">Division</button>
                                         </div>
+                                        <button class="close-btn" onclick="closePopup()">Close</button>
                                     </div>
                                 </div>
                             </div>
@@ -149,6 +157,47 @@
                 .catch(error => {
                     console.error('Error during session check:', error);
                 });
+        });
+
+        function openPopup() {
+            document.getElementById('operationPopup').style.display = 'flex';
+
+            const operations = [
+                { name: 'addition', percentage: parseFloat(document.getElementsByClassName('learning-text07')[0].textContent) },
+                { name: 'subtraction', percentage: parseFloat(document.getElementsByClassName('learning-text11')[0].textContent) },
+                { name: 'multiplication', percentage: parseFloat(document.getElementsByClassName('learning-text15')[0].textContent) },
+                { name: 'division', percentage: parseFloat(document.getElementsByClassName('learning-text19')[0].textContent) }
+            ];
+
+            const lowestPercentageOperation = operations.reduce((min, op) => op.percentage < min.percentage ? op : min);
+
+            const recommendedButton = document.querySelector(`.operation-btn[data-operation="${lowestPercentageOperation.name}"]`);
+
+            recommendedButton.classList.add('recommended');
+            recommendedButton.innerHTML += ' (Recommended)';
+
+        }
+
+
+        function closePopup() {
+
+            const operationButtons = document.querySelectorAll('.operation-btn');
+            operationButtons.forEach(button => {
+                button.classList.remove('recommended');
+                button.innerHTML = button.innerHTML.replace(' (Recommended)', ''); // Remove "(Recommended)" text
+            });
+
+            document.getElementById('operationPopup').style.display = 'none';
+        }
+
+        document.querySelector('.learn-btn').addEventListener('click', openPopup);
+
+        const operationBtns = document.querySelectorAll('.operation-btn');
+        operationBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const selectedOperation = this.dataset.operation;
+                window.location.replace(`http://127.0.0.1:5500/TRIALWEBSITE/html/${selectedOperation}.html`);
+            });
         });
     </script>
 </body>

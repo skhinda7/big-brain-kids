@@ -1,6 +1,9 @@
-taught = 0.0001
+initialTaught = 0.0001
 slip = 0.0001
 guess = 0.0001
+
+def getTaught(known):
+    return initialTaught / (1 + known)
 
 def correct(known, slip, guess):
     num = (known * (1 - slip))
@@ -12,16 +15,16 @@ def incorrect(known, slip, guess):
     den = (known * slip + (1 - known) * (1 - guess))
     return num/den
 
-def action(known, taught):
-    return known + ((1 - known) * taught)
+def action(known):
+    return known + ((1 - known) * getTaught(known))
 
-def checkSkill(answerList, known, taught, slip, guess):
+def checkSkill(answerList, known, slip, guess):
     print("Initial Known", known)
     for i in range(len(answerList)):
         if(answerList[i] == 0): # Correct Answer
-            known = action(correct(known, slip, guess), taught)
+            known = action(correct(known, slip, guess))
         if(answerList[i] == 1): # Incorrect Answer
-            known = action(incorrect(known, slip, guess), taught)
+            known = action(incorrect(known, slip, guess))
     return known
     
 # testList = [1, 0, 0, 0, 0, 0, 1, 1, 1] # Test Array of Correct/Incorrect Answers

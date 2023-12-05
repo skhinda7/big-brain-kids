@@ -50,7 +50,7 @@ def process_score():
     operation = data['operation']
     answerList = data['answerList']
     
-    updateScore = checkSkill(answerList, file.getScore(id)[operation], (len(answerList) / 100), 0.3, 0.2)
+    updateScore = checkSkill(answerList, file.getScore(id)[operation], 0.3, 0.2)
     
     print(file.appendScore(id, operation, updateScore))
     
@@ -68,8 +68,6 @@ def get_question():
             question = content.getDynamicQuestion(operation, file.getScore(id)[operation])
     else:
             question = content.getQuestion(operation)
-
-    print(question[0])
 
     return {"equation": question[0], "answer": question[1]} # example: ('$22+16=$', '$38$')
 

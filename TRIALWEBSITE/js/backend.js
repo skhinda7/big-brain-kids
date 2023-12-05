@@ -202,3 +202,11 @@ function displayBanner(bannerId) {
     bannerToShow.classList.remove('hidden');
 }
 
+function logOut() {
+    localStorage.removeItem('authToken');
+
+    alert('You have successfully logged out');
+
+    return window.location.replace('http://127.0.0.1:5500/TRIALWEBSITE/html/homepage.html');
+}
+
